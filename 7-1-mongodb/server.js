@@ -190,7 +190,7 @@
 
 import mongoose from "mongoose";
 
-mongoose.connect("mongodb+srv://Shahad:YOUR_PASSWORD@cluster0.r70unrw.mongodb.net/TestDB")
+mongoose.connect("mongodb+srv://Shahad:Shahad@cluster0.r70unrw.mongodb.net/TestDB")
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log(err));
 
