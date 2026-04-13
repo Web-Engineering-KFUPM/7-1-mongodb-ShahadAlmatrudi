@@ -129,6 +129,8 @@
       const Student = mongoose.model("Student", studentSchema);
       - Run server: node server.js and go to mongo cloud to see DB schema in test->students.
  * 
+
+      import mongoose from "mongoose";
  * =====================================================
  * TODO-3 Create Document
  * ===================================================== 
@@ -185,6 +187,12 @@
  */
 
 // import mongoose
+
+import mongoose from "mongoose";
+
+mongoose.connect("mongodb+srv://Shahad:YOUR_PASSWORD@cluster0.r70unrw.mongodb.net/TestDB")
+  .then(() => console.log("Connected to MongoDB"))
+  .catch((err) => console.log(err));
 
 // establish connection
 
